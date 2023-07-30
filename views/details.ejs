@@ -8,7 +8,9 @@
         <%- include('./partials/nav.ejs') %>
 
         <div class="details content">
-            <h2><%= course.title %></h2>
+            <h2><%= course.code %></h2>
+            <h4>Subject: <%= course.title %></h4>
+            <h4>Credits: <%= course.credits %></h4>
             <div class="content">
                 <p><%= course.desc %></p>
             </div>

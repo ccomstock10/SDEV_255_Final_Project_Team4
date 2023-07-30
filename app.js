@@ -114,7 +114,8 @@ app.put('/edit/:id',requireAuth, (req, res) => {
     const updatedCourse = {
         code: req.body.code,
         title: req.body.title,
-        desc: req.body.desc
+        desc: req.body.desc,
+        credits: req.body.credits
     };
 
     Course.findOneAndUpdate({ _id: courseId }, updatedCourse, { new: true })
